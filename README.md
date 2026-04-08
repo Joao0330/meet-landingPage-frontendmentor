@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/meet-landing-page-using-sass-css-BTPYlNRu6V)
 - Live Site URL: [Live site URL here](https://joao0330.github.io/meet-landingPage-frontendmentor)
 
 ## My process
