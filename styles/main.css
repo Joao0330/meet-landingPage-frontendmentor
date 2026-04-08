@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+main {
+  display: block;
+}
+
+/* @include breakpointMobile(991px) {
+    width: 100%;
+} */
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.sr-only {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.063rem;
+  height: 0.063rem;
+  padding: 0;
+  margin: -0.063rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+  grid-area: none;
+}
+
+.logo {
+  margin: 0 auto;
+  padding-top: 3rem;
+}
+
+.page-number {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.page-number span:first-of-type {
+  width: 0.063rem;
+  height: 5rem;
+  background: hsl(240, 18%, 85%);
+}
+.page-number span:last-of-type {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid hsl(240, 18%, 85%);
+  border-radius: 50%;
+  line-height: 150%;
+  font-weight: 900;
+  color: hsl(240, 10%, 57%);
+  background: white;
+}
+
+.btn-blue {
+  background: hsl(192, 37%, 48%);
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 1.813rem;
+  color: white;
+  line-height: 150%;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-blue:hover {
+  background: #71c0d4;
+}
+.btn-blue span {
+  color: hsl(192, 90%, 77%);
+}
+
+.btn-purple {
+  background: hsl(268, 34%, 53%);
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 1.813rem;
+  color: white;
+  line-height: 150%;
+  font-size: 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.btn-purple:hover {
+  background: #b18bdd;
+}
+.btn-purple span {
+  color: hsl(268, 100%, 86%);
+}
+
+.hero {
+  padding: 4rem 2.188rem 2rem 2.188rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  text-align: center;
+  overflow: hidden;
+}
+.hero img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 140%;
+}
+.hero__content h2 {
+  font-size: 2.7rem;
+  font-weight: 900;
+  line-height: 110%;
+  color: hsl(240, 21%, 20%);
+}
+.hero__content p {
+  font-weight: 500;
+  line-height: 150%;
+  color: hsl(240, 10%, 57%);
+  margin: 1.5rem 0;
+}
+.hero__content button:first-of-type {
+  margin-bottom: 1rem;
+}
+
+.description {
+  padding: 2rem 2.188rem 4rem 2.188rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  text-align: center;
+}
+.description__images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+.description__images img {
+  border-radius: 0.5rem;
+}
+.description__content strong {
+  font-size: 0.75rem;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: 4px;
+  color: hsl(192, 37%, 48%);
+}
+.description__content h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 110%;
+  color: hsl(240, 21%, 20%);
+  margin: 1rem 0 2rem;
+}
+.description__content p {
+  font-weight: 500;
+  line-height: 150%;
+  color: hsl(240, 10%, 57%);
+}
+
+.footer {
+  position: relative;
+}
+.footer__content {
+  position: absolute;
+  top: 80%;
+  width: 100%;
+  background-image: url("../../assets/mobile/image-footer.jpg");
+  background-size: cover;
+  padding: 4rem 2rem;
+  text-align: center;
+  z-index: 5;
+}
+.footer__content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(192, 37%, 48%, 0.849);
+  z-index: -1;
+}
+.footer__content h2 {
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 110%;
+  color: white;
+}
+.footer__content p {
+  font-weight: 500;
+  line-height: 150%;
+  color: white;
+  margin: 1.5rem 0;
+}

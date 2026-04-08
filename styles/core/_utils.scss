@@ -19,3 +19,37 @@
 	border: 0;
 	grid-area: none;
 }
+
+.logo {
+	margin: 0 auto;
+	padding-top: 3rem;
+}
+
+.page-number {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 10;
+
+	span:first-of-type {
+		width: 0.063rem;
+		height: 5rem;
+		background: $color-slate-300;
+	}
+
+	span:last-of-type {
+		width: 3.5rem;
+		height: 3.5rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border: 1px solid $color-slate-300;
+		border-radius: 50%;
+		line-height: 150%;
+		font-weight: 900;
+		color: $color-slate-600;
+		background: white;
+	}
+}

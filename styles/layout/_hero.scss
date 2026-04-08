@@ -1,0 +1,36 @@
+@use '../abstracts' as *;
+
+.hero {
+	padding: 4rem 2.188rem 2rem 2.188rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+	text-align: center;
+	overflow: hidden;
+
+	img {
+		object-fit: cover;
+		width: 140%;
+	}
+
+	&__content {
+		h2 {
+			font-size: 2.7rem;
+			font-weight: 900;
+			line-height: 110%;
+			color: $color-slate-900;
+		}
+
+		p {
+			font-weight: 500;
+			line-height: 150%;
+			color: $color-slate-600;
+			margin: 1.5rem 0;
+		}
+
+		button:first-of-type {
+			margin-bottom: 1rem;
+		}
+	}
+}
