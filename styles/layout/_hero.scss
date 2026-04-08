@@ -9,17 +9,49 @@
 	text-align: center;
 	overflow: hidden;
 
-	img {
+	@include breakpointMobile(48rem) {
+		padding: 4rem 2.75rem;
+		gap: 4.5rem;
+	}
+
+	@include breakpointMobile(80rem) {
+		padding: 4rem 0;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	&__image-mobile {
 		object-fit: cover;
 		width: 140%;
+
+		@include breakpointMobile(48rem) {
+			width: 120%;
+		}
+
+		@include breakpointMobile(80rem) {
+			display: none;
+		}
 	}
 
 	&__content {
+		@include breakpointMobile(48rem) {
+			padding: 0 8rem;
+		}
+
+		@include breakpointMobile(80rem) {
+			padding: 0 2rem;
+		}
+
 		h2 {
 			font-size: 2.7rem;
 			font-weight: 900;
 			line-height: 110%;
 			color: $color-slate-900;
+
+			@include breakpointMobile(48rem) {
+				font-size: 3rem;
+				text-wrap: balance;
+			}
 		}
 
 		p {
@@ -31,6 +63,29 @@
 
 		button:first-of-type {
 			margin-bottom: 1rem;
+
+			@include breakpointMobile(48rem) {
+				margin-bottom: 0;
+				margin-right: 1.063rem;
+			}
+		}
+	}
+
+	&__image-dskLeft {
+		display: none;
+
+		@include breakpointMobile(80rem) {
+			display: block;
+			object-fit: cover;
+		}
+	}
+
+	&__image-dskRight {
+		display: none;
+
+		@include breakpointMobile(80rem) {
+			display: block;
+			object-fit: cover;
 		}
 	}
 }

@@ -12,8 +12,10 @@
 	cursor: pointer;
 	transition: background 0.3s ease;
 
-	&:hover {
-		background: #71c0d4;
+	@include breakpointMobile(80rem) {
+		&:hover {
+			background: #71c0d4;
+		}
 	}
 
 	span {
@@ -33,8 +35,10 @@
 	cursor: pointer;
 	transition: background 0.3s ease;
 
-	&:hover {
-		background: #b18bdd;
+	@include breakpointMobile(80rem) {
+		&:hover {
+			background: #b18bdd;
+		}
 	}
 
 	span {
